@@ -44,24 +44,20 @@ require "function/connection.php";
                         <div class="contact-link">
                             <ul>
                                 <li class="bg-info">
-                                    <a href="https://www.facebook.com/idb.azimul/"><img src="images/images.png" width="25" height="25"> Login with Facebook</a>
+                                    <a href="https://www.facebook.com/"><img src="images/images.png" width="25" height="25"> Login with Facebook</a>
                                 </li>
                                 <br>
                                 <li class="bg-info">
-                                    <a href="http://twitter.com/idb.azimul/"><img src="images/twt1.png" width="25" height="25"> Login with Twitter</a>
+                                    <a href="https://twitter.com/login"><img src="images/twt1.png" width="25" height="25"> Login with Twitter</a>
                                 </li>
                                 <br>
                                 <li class="bg-info">
-                                    <a href="http://plus.google.com/idb.azimul/"><img src="images/gp1.png" width="25" height="24"> Login with Google plus</a>
+                                    <a href="https://www.google.com/gmail/about/#"><img src="images/gm.png" width="25" height="21"> Login with Gmail</a>
                                 </li>
                                 <br>
-                                <li class="bg-info">
-                                    <a href="mailto:amadercode@gmail.com"><img src="images/gm.png" width="25" height="21"> Login with Gmail</a>
-                                </li>
+                                <li><a href="login.php"> If you are Existing User click here to Login</a></li>
                                 <br>
-                                <li><a href="login.php"> If you are Existing User clic here to Login</a></li>
-                                <br>
-                                <li><a href="adspost.php">If you are Existing User clic here to add Post</a></li>
+                                <li><a href="adspost.php">If you are Existing User click here to add Post</a></li>
                             </ul>
 
                         </div>
@@ -119,7 +115,7 @@ if(isset($_POST['sub'])){
 	$useragreement = $_POST['agree'];
 	
 	if($fullname=="" || $username=="" || $useremail=="" || $Upass=="" || $uphone=="" || $Usertype=="" || $useragreement==""){
-		header("location: usersingup.php");
+		header("location: usersignup.php");
 		exit;
 		}
 	$insertQuery = "INSERT INTO `buynsell`.`users` VALUES ('','$fullname','$username','$useremail','$Upass','$uphone', '$Usertype','$currentDate', '', '')";
