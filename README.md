@@ -1,5 +1,5 @@
 # Online Classified Site - OFFERUP
-This site is used for buying or selling products online
+This site is used for buying or selling used products online
 
 ## Technologies Used are
 
