@@ -3,11 +3,11 @@ This site is used for buying or selling products online
 
 ## Technologies Used are
 
-* Php
+* PHP
 * JavaScript
-* MySql
+* MySQL
 * JQuery
 * Ajax
-* Bootstarp
+* Bootstrap
 * HTML5
 * CSS3
