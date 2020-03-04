@@ -1,4 +1,4 @@
-# Online-Buy-n-sell
+# Online Classified Site - OFFERUP
 This site is used for buying or selling products online
 
 ## Technologies Used are
