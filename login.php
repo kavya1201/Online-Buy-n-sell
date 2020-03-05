@@ -76,18 +76,14 @@ session_start();
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="http://twitter.com/"><img src="images/twt1.png" width="25" height="25"> Login with Twitter</a>
+                                    <a href="http://twitter.com/login/"><img src="images/twt1.png" width="25" height="25"> Login with Twitter</a>
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="http://plus.google.com/"><img src="images/gp1.png" width="25" height="24"> Login with Google plus</a>
+                                    <a href="https://www.google.com/gmail/about/#"><img src="images/gm.png" width="25" height="21"> Login with Gmail</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="mailto:amadercode@gmail.com"><img src="images/gm.png" width="25" height="21"> Login with Gmail</a>
-                                </li>
-                                <br>
-                                <li> <a href="usersingup.php">If You New User please clicK here to Sign Up?</a>
+                                <li> <a href="usersignup.php">If you are a new user, click here to sign up!</a>
                                 </li>
                             </ul>
                         </div>
