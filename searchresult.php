@@ -24,7 +24,7 @@
 <?php 
 		include ("function/area.php");
 		include ("include/header.php");
-        include ("include/bannar.php");
+        	include ("include/bannar.php");
 		include ("function/connection.php");
 		include ("function/function.php");
 		include ("include/search.php");
