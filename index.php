@@ -75,6 +75,7 @@
                             </a>
                             <a href="subarea.php?id=4">
                                 <li>California</li>
+			    </a>
                             <a href="subarea.php?id=5">
                                 <li>Utah</li>
                             </a>
