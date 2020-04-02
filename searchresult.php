@@ -21,10 +21,11 @@
 
 <body>
 
-<?php 
+<?php
+
 		include ("function/area.php");
 		include ("include/header.php");
-        	include ("include/bannar.php");
+  //  include ("include/banner.php");
 		include ("function/connection.php");
 		include ("function/function.php");
 		include ("include/search.php");
@@ -33,17 +34,17 @@
 <div class="container">
 <?php
 include ("include/sidebar.php");
-?>	
+?>
 <?php
 if(isset($_POST['submit'])){
 $name = $_POST['name'];
 if(empty($name)){
 	$make = '<h4>You must type a word to search!</h4>';
 }else{
-	
+
 	$sele = "SELECT * FROM product WHERE title LIKE '%$name%'";
 	$result = $con->query($sele);
-	
+
 	if($make = $result->num_rows > 0){
 		echo "<div class='col-md-7 madd'>";
 		while($row =$result->fetch_array(MYSQLI_ASSOC)){
@@ -58,9 +59,9 @@ if(empty($name)){
 				<a href='itemDetails.php?details=".$row['id']."'><button class='btn btn-primary'>Details</button></a>
 				</div>";
 				echo "</div>";
-				
+
 			}
-			
+
 			echo "</div>";
 		}
 else{
@@ -73,14 +74,14 @@ echo "</div>";
 }
 
 ?>
-<?php 
+<?php
 		include ("include/rightbar.php");
 	?>
 </div>
-	<?php 
+	<?php
 		include ("include/footer.php");
 	?>
-    
+
     <!--/Footer-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
