@@ -7,7 +7,7 @@ class adspostTest extends \PHPUnit\Framework\TestCase
     $postad=new \adspost1;
     $postad->setUserid('2');
     $userid= $postad->getUserid();
-    $this->assertTrue('2');
+    $this->assertEquals('2',$userid);
   }
   public function testareaId()
   {
