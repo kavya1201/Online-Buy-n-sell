@@ -3,12 +3,12 @@
 include("header.php");?>
 
 
-        
+
        <?php
 include("sidebar.php");
 ?>
 
-	
+
 	<script>
 	$( document ).ready(function() {
 
@@ -26,7 +26,7 @@ function manageData() {
         url:'api/getArea.php',
         data: {page:page}
     }).done(function(data){
-    	total_page = Math.ceil(data.total/10);
+    	total_page = Math.ceil(data.total/6);
     	current_page = page;
 
     	$('#pagination').twbsPagination({
@@ -127,10 +127,10 @@ $("body").on("click",".edit-item",function(){
 
     var id = $(this).parent("td").data('id');
     var areaname = $(this).parent("td").prev("td").prev("td").prev("td").prev("td").prev("td").prev("td").text();
-    
+
 
     $("#edit-item").find("input[name='areaname']").val(areaname);
-  
+
     $("#edit-item").find(".edit-id").val(id);
 
 });
@@ -162,8 +162,8 @@ $(".crud-submit-edit").click(function(e){
 });
 	</script>
     <link href="css/toastr.min.css" rel="stylesheet">
-    
-	
+
+
     <style type="text/css">
     	.modal-dialog, .modal-content{
 		z-index:1051;
@@ -175,9 +175,9 @@ $(".crud-submit-edit").click(function(e){
 <!--=========================================== -->
 <div class="container">
 		<div class="row">
-		    <div class="col-lg-12 margin-tb">					
+		    <div class="col-lg-12 margin-tb">
 		        <div class="pull-left">
-		            <h2>See All Admin</h2>
+		            <h2>See All Area</h2>
 		        </div>
 		        <div class="pull-right">
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-item">
@@ -223,8 +223,8 @@ $(".crud-submit-edit").click(function(e){
 							<input type="text" name="areaname" class="form-control" data-error="Please enter firstname." required />
 							<div class="help-block with-errors"></div>
 						</div>
-                        
-                        
+
+
 						<div class="form-group">
 							<button type="submit" class="btn crud-submit btn-success">Submit</button>
 						</div>
@@ -255,8 +255,8 @@ $(".crud-submit-edit").click(function(e){
 							<input type="text" name="areaname" class="form-control" data-error="Please enter firstname." required />
 							<div class="help-block with-errors"></div>
 						</div>
-                        
-                                               
+
+
 						<div class="form-group">
 							<button type="submit" class="btn btn-success crud-submit-edit">Submit</button>
 						</div>
@@ -271,19 +271,18 @@ $(".crud-submit-edit").click(function(e){
 	</div>
 
 
-  
+
 </div>
-  
-  
-  
+
+
+
   <!-- content starts -->
-  
 
 
-  
-  
-  
+
+
+
+
     <?php
 include("footer.php");
 ?>
-

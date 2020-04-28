@@ -3,12 +3,12 @@
 include("header.php");?>
 
 
-        
+
        <?php
 include("sidebar.php");
 ?>
 
-	
+
 	<script>
 	$( document ).ready(function() {
 
@@ -26,7 +26,7 @@ function manageData() {
         url:'api/getCategory.php',
         data: {page:page}
     }).done(function(data){
-    	total_page = Math.ceil(data.total/10);
+    	total_page = Math.ceil(data.total/5);
     	current_page = page;
 
     	$('#pagination').twbsPagination({
@@ -166,8 +166,8 @@ $(".crud-submit-edit").click(function(e){
 });
 	</script>
     <link href="css/toastr.min.css" rel="stylesheet">
-    
-	
+
+
     <style type="text/css">
     	.modal-dialog, .modal-content{
 		z-index:1051;
@@ -179,7 +179,7 @@ $(".crud-submit-edit").click(function(e){
 <!--=========================================== -->
 <div class="container">
 		<div class="row">
-		    <div class="col-lg-12 margin-tb">					
+		    <div class="col-lg-12 margin-tb">
 		        <div class="pull-left">
 		            <h2>See All Category</h2>
 		        </div>
@@ -285,19 +285,18 @@ $(".crud-submit-edit").click(function(e){
 	</div>
 
 
-  
+
 </div>
-  
-  
-  
+
+
+
   <!-- content starts -->
-  
 
 
-  
-  
-  
+
+
+
+
     <?php
 include("footer.php");
 ?>
-
